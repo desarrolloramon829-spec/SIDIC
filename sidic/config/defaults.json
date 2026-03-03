@@ -1,0 +1,1075 @@
+{
+  "_version": "2.0.0",
+  "_description": "Configuración por defecto para S.I.D.I.C v2 — consolidada y sin duplicados",
+
+  "app": {
+    "name": "S.I.D.I.C",
+    "full_name": "Sistema de Información Delictual e Inteligencia Criminal",
+    "version": "2.0.0",
+    "max_periodos": 6
+  },
+
+  "categorias": {
+    "ROBOS": [
+      "ROBO AGRAVADO ASALTANTE",
+      "ROBO AGRAVADO ASALTANTE EN BANDA",
+      "ROBO AGRAVADO DE MOTOVEHICULO",
+      "ROBO AGRAVADO PIRAÑA DE MOTOVEHICULO",
+      "ROBO AGRAVADO DE AUTOMOTOR",
+      "ROBO AGRAVADO ENTRADERA",
+      "ROBO AGRAVADO ARIETE",
+      "ROBO PIRAÑA DE MOTOVEHICULOS",
+      "ROBO PIRAÑA",
+      "ROBO ARREBATO",
+      "ROBO CLAVERO DE AUTOS",
+      "ROBO DE MOTOVEHICULOS",
+      "ROBO DE AUTOMOTOR",
+      "ROBO ESCRUCHE",
+      "ROBO BOQUETERO",
+      "ROBO ROMPE VIDRIO",
+      "ROBO OPORTUNISTA"
+    ],
+    "TENTATIVA DE ROBOS": [
+      "TENTATIVA DE ROBO AGRAVADO ASALTANTE",
+      "TENTATIVA DE ROBO AGRAVADO ASALTANTE EN BANDA",
+      "TENTATIVA DE ROBO AGRAVADO DE MOTOVEHICULO",
+      "TENTATIVA DE ROBO AGRAVADO PIRAÑA DE MOTOVEHICULO",
+      "TENTATIVA DE ROBO AGRAVADO DE AUTOMOTOR",
+      "TENTATIVA DE ROBO AGRAVADO ENTRADERA",
+      "TENTATIVA DE ROBO AGRAVADO ARIETE",
+      "TENTATIVA DE ROBO PIRAÑA DE MOTOVEHICULOS",
+      "TENTATIVA DE ROBO PIRAÑA",
+      "TENTATIVA DE ROBO ARREBATO",
+      "TENTATIVA DE ROBO CLAVERO DE AUTOS",
+      "TENTATIVA DE ROBO DE MOTOVEHICULOS",
+      "TENTATIVA DE ROBO DE AUTOMOTOR",
+      "TENTATIVA DE ROBO ESCRUCHE",
+      "TENTATIVA DE ROBO BOQUETERO",
+      "TENTATIVA DE ROBO ROMPE VIDRIO",
+      "TENTATIVA DE ROBO OPORTUNISTA"
+    ],
+    "HURTOS": [
+      "HURTO PUNGA",
+      "HURTO MECHERA",
+      "HURTO OPORTUNISTA",
+      "HURTO DE MOTOVEHICULO",
+      "HURTO DE AUTOMOTOR",
+      "HURTO INHIBIDOR DE ALARMAS",
+      "HURTO ESCALAMIENTO",
+      "HURTO VIUDA NEGRA"
+    ],
+    "TENTATIVA DE HURTOS": [
+      "TENTATIVA DE HURTO PUNGA",
+      "TENTATIVA DE HURTO MECHERA",
+      "TENTATIVA DE HURTO OPORTUNISTA",
+      "TENTATIVA DE HURTO DE MOTOVEHICULO",
+      "TENTATIVA DE HURTO DE AUTOMOTOR",
+      "TENTATIVA DE HURTO INHIBIDOR DE ALARMAS",
+      "TENTATIVA DE HURTO ESCALAMIENTO",
+      "TENTATIVA DE HURTO VIUDA NEGRA"
+    ],
+    "ESTAFAS": ["ESTAFA CUENTO DEL TIO", "TENTATIVA DE ESTAFA CUENTO DEL TIO"],
+    "OTROS": []
+  },
+
+  "robo_agravado": [
+    "ROBO AGRAVADO ASALTANTE",
+    "ROBO AGRAVADO ASALTANTE EN BANDA",
+    "ROBO AGRAVADO DE MOTOVEHICULO",
+    "ROBO AGRAVADO PIRAÑA DE MOTOVEHICULO",
+    "ROBO AGRAVADO DE AUTOMOTOR",
+    "ROBO AGRAVADO ENTRADERA",
+    "ROBO AGRAVADO ARIETE"
+  ],
+
+  "simbolos": {
+    "ROBO AGRAVADO ASALTANTE": {
+      "simbolo": "▲",
+      "color": "#FF0000",
+      "descripcion": "Robo Agravado Asaltante",
+      "relleno": true
+    },
+    "ROBO AGRAVADO ASALTANTE EN BANDA": {
+      "simbolo": "△",
+      "color": "#FF0000",
+      "descripcion": "Robo Agravado Asaltante en Banda",
+      "relleno": false
+    },
+    "ROBO AGRAVADO DE MOTOVEHICULO": {
+      "simbolo": "▷",
+      "color": "#FF0000",
+      "descripcion": "Robo Agravado de Motovehículo",
+      "relleno": true
+    },
+    "ROBO AGRAVADO PIRAÑA DE MOTOVEHICULO": {
+      "simbolo": "▶",
+      "color": "#FF0000",
+      "descripcion": "Robo Agravado Piraña de Motovehículo",
+      "relleno": true
+    },
+    "ROBO AGRAVADO DE AUTOMOTOR": {
+      "simbolo": "△",
+      "color": "#808080",
+      "descripcion": "Robo Agravado de Automotor",
+      "relleno": false
+    },
+    "ROBO AGRAVADO ENTRADERA": {
+      "simbolo": "▷",
+      "color": "#00FF00",
+      "descripcion": "Robo Agravado Entradera",
+      "relleno": false
+    },
+    "ROBO AGRAVADO ARIETE": {
+      "simbolo": "△",
+      "color": "#0000FF",
+      "descripcion": "Robo Agravado Ariete",
+      "relleno": false
+    },
+    "ROBO PIRAÑA DE MOTOVEHICULOS": {
+      "simbolo": "⬠",
+      "color": "#00FF00",
+      "descripcion": "Robo Piraña de Motovehículos",
+      "relleno": true
+    },
+    "ROBO PIRAÑA": {
+      "simbolo": "⬡",
+      "color": "#00FF00",
+      "descripcion": "Robo Piraña",
+      "relleno": true
+    },
+    "ROBO ARREBATO": {
+      "simbolo": "◐",
+      "color": "#FFFF00",
+      "descripcion": "Robo Arrebato",
+      "relleno": true
+    },
+    "ROBO CLAVERO DE AUTOS": {
+      "simbolo": "△",
+      "color": "#00FF00",
+      "descripcion": "Robo Clavero de Autos",
+      "relleno": false
+    },
+    "ROBO DE MOTOVEHICULOS": {
+      "simbolo": "△",
+      "color": "#00FF00",
+      "descripcion": "Robo de Motovehículos",
+      "relleno": false
+    },
+    "ROBO DE AUTOMOTOR": {
+      "simbolo": "△",
+      "color": "#FFFFFF",
+      "descripcion": "Robo de Automotor",
+      "relleno": false
+    },
+    "ROBO ESCRUCHE": {
+      "simbolo": "▲",
+      "color": "#00FF00",
+      "descripcion": "Robo Escruche",
+      "relleno": true
+    },
+    "ROBO BOQUETERO": {
+      "simbolo": "▲",
+      "color": "#00FF00",
+      "descripcion": "Robo Boquetero",
+      "relleno": true
+    },
+    "ROBO ROMPE VIDRIO": {
+      "simbolo": "▶",
+      "color": "#000000",
+      "descripcion": "Robo Rompe Vidrio",
+      "relleno": true
+    },
+    "ROBO OPORTUNISTA": {
+      "simbolo": "▲",
+      "color": "#000000",
+      "descripcion": "Robo Oportunista",
+      "relleno": true
+    },
+
+    "TENTATIVA DE ROBO AGRAVADO ASALTANTE": {
+      "simbolo": "△",
+      "color": "#FF0000",
+      "descripcion": "Tentativa de Robo Agravado Asaltante",
+      "relleno": false,
+      "borde": true
+    },
+    "TENTATIVA DE ROBO AGRAVADO ASALTANTE EN BANDA": {
+      "simbolo": "△",
+      "color": "#FF0000",
+      "descripcion": "Tentativa de Robo Agravado Asaltante en Banda",
+      "relleno": false,
+      "borde": true
+    },
+    "TENTATIVA DE ROBO AGRAVADO DE MOTOVEHICULO": {
+      "simbolo": "▷",
+      "color": "#FF0000",
+      "descripcion": "Tentativa de Robo Agravado de Motovehículo",
+      "relleno": false,
+      "borde": true
+    },
+    "TENTATIVA DE ROBO AGRAVADO PIRAÑA DE MOTOVEHICULO": {
+      "simbolo": "▷",
+      "color": "#FF0000",
+      "descripcion": "Tentativa de Robo Agravado Piraña de Motovehículo",
+      "relleno": false,
+      "borde": true
+    },
+    "TENTATIVA DE ROBO AGRAVADO DE AUTOMOTOR": {
+      "simbolo": "△",
+      "color": "#FF0000",
+      "descripcion": "Tentativa de Robo Agravado de Automotor",
+      "relleno": false,
+      "borde": true
+    },
+    "TENTATIVA DE ROBO AGRAVADO ENTRADERA": {
+      "simbolo": "▷",
+      "color": "#FF0000",
+      "descripcion": "Tentativa de Robo Agravado Entradera",
+      "relleno": false,
+      "borde": true
+    },
+    "TENTATIVA DE ROBO AGRAVADO ARIETE": {
+      "simbolo": "△",
+      "color": "#FF0000",
+      "descripcion": "Tentativa de Robo Agravado Ariete",
+      "relleno": false,
+      "borde": true
+    },
+    "TENTATIVA DE ROBO PIRAÑA DE MOTOVEHICULOS": {
+      "simbolo": "⬡",
+      "color": "#00FF00",
+      "descripcion": "Tentativa de Robo Piraña de Motovehículos",
+      "relleno": false,
+      "borde": true
+    },
+    "TENTATIVA DE ROBO PIRAÑA": {
+      "simbolo": "⬡",
+      "color": "#00FF00",
+      "descripcion": "Tentativa de Robo Piraña",
+      "relleno": false,
+      "borde": true
+    },
+    "TENTATIVA DE ROBO ARREBATO": {
+      "simbolo": "◑",
+      "color": "#FFFF00",
+      "descripcion": "Tentativa de Robo Arrebato",
+      "relleno": false,
+      "borde": true
+    },
+    "TENTATIVA DE ROBO CLAVERO DE AUTOS": {
+      "simbolo": "△",
+      "color": "#00FF00",
+      "descripcion": "Tentativa de Robo Clavero de Autos",
+      "relleno": false,
+      "borde": true
+    },
+    "TENTATIVA DE ROBO DE MOTOVEHICULOS": {
+      "simbolo": "△",
+      "color": "#00FF00",
+      "descripcion": "Tentativa de Robo de Motovehículos",
+      "relleno": false,
+      "borde": true
+    },
+    "TENTATIVA DE ROBO DE AUTOMOTOR": {
+      "simbolo": "△",
+      "color": "#FFFFFF",
+      "descripcion": "Tentativa de Robo de Automotor",
+      "relleno": false,
+      "borde": true
+    },
+    "TENTATIVA DE ROBO ESCRUCHE": {
+      "simbolo": "△",
+      "color": "#00FF00",
+      "descripcion": "Tentativa de Robo Escruche",
+      "relleno": false,
+      "borde": true
+    },
+    "TENTATIVA DE ROBO BOQUETERO": {
+      "simbolo": "△",
+      "color": "#00FF00",
+      "descripcion": "Tentativa de Robo Boquetero",
+      "relleno": false,
+      "borde": true
+    },
+    "TENTATIVA DE ROBO ROMPE VIDRIO": {
+      "simbolo": "▷",
+      "color": "#000000",
+      "descripcion": "Tentativa de Robo Rompe Vidrio",
+      "relleno": false,
+      "borde": true
+    },
+    "TENTATIVA DE ROBO OPORTUNISTA": {
+      "simbolo": "△",
+      "color": "#000000",
+      "descripcion": "Tentativa de Robo Oportunista",
+      "relleno": false,
+      "borde": true
+    },
+
+    "HURTO PUNGA": {
+      "simbolo": "●",
+      "color": "#0000FF",
+      "descripcion": "Hurto Punga",
+      "relleno": true
+    },
+    "HURTO MECHERA": {
+      "simbolo": "●",
+      "color": "#FFFF00",
+      "descripcion": "Hurto Mechera",
+      "relleno": true
+    },
+    "HURTO OPORTUNISTA": {
+      "simbolo": "●",
+      "color": "#000000",
+      "descripcion": "Hurto Oportunista",
+      "relleno": true
+    },
+    "HURTO DE MOTOVEHICULO": {
+      "simbolo": "●",
+      "color": "#FF0000",
+      "descripcion": "Hurto de Motovehículo",
+      "relleno": true
+    },
+    "HURTO DE AUTOMOTOR": {
+      "simbolo": "●",
+      "color": "#808080",
+      "descripcion": "Hurto de Automotor",
+      "relleno": true
+    },
+    "HURTO INHIBIDOR DE ALARMAS": {
+      "simbolo": "○",
+      "color": "#000000",
+      "descripcion": "Hurto Inhibidor de Alarmas",
+      "relleno": false
+    },
+    "HURTO ESCALAMIENTO": {
+      "simbolo": "●",
+      "color": "#FFA500",
+      "descripcion": "Hurto Escalamiento",
+      "relleno": true
+    },
+    "HURTO VIUDA NEGRA": {
+      "simbolo": "●",
+      "color": "#000000",
+      "descripcion": "Hurto Viuda Negra",
+      "relleno": true
+    },
+
+    "TENTATIVA DE HURTO PUNGA": {
+      "simbolo": "○",
+      "color": "#0000FF",
+      "descripcion": "Tentativa de Hurto Punga",
+      "relleno": false,
+      "borde": true
+    },
+    "TENTATIVA DE HURTO MECHERA": {
+      "simbolo": "○",
+      "color": "#FFFF00",
+      "descripcion": "Tentativa de Hurto Mechera",
+      "relleno": false,
+      "borde": true
+    },
+    "TENTATIVA DE HURTO OPORTUNISTA": {
+      "simbolo": "○",
+      "color": "#000000",
+      "descripcion": "Tentativa de Hurto Oportunista",
+      "relleno": false,
+      "borde": true
+    },
+    "TENTATIVA DE HURTO DE MOTOVEHICULO": {
+      "simbolo": "○",
+      "color": "#FF0000",
+      "descripcion": "Tentativa de Hurto de Motovehículo",
+      "relleno": false,
+      "borde": true
+    },
+    "TENTATIVA DE HURTO DE AUTOMOTOR": {
+      "simbolo": "○",
+      "color": "#808080",
+      "descripcion": "Tentativa de Hurto de Automotor",
+      "relleno": false,
+      "borde": true
+    },
+    "TENTATIVA DE HURTO INHIBIDOR DE ALARMAS": {
+      "simbolo": "○",
+      "color": "#000000",
+      "descripcion": "Tentativa de Hurto Inhibidor de Alarmas",
+      "relleno": false,
+      "borde": true
+    },
+    "TENTATIVA DE HURTO ESCALAMIENTO": {
+      "simbolo": "○",
+      "color": "#FFA500",
+      "descripcion": "Tentativa de Hurto Escalamiento",
+      "relleno": false,
+      "borde": true
+    },
+    "TENTATIVA DE HURTO VIUDA NEGRA": {
+      "simbolo": "○",
+      "color": "#000000",
+      "descripcion": "Tentativa de Hurto Viuda Negra",
+      "relleno": false,
+      "borde": true
+    },
+
+    "ESTAFA CUENTO DEL TIO": {
+      "simbolo": "◆",
+      "color": "#0000FF",
+      "descripcion": "Estafa Cuento del Tío",
+      "relleno": true
+    },
+    "TENTATIVA DE ESTAFA CUENTO DEL TIO": {
+      "simbolo": "◇",
+      "color": "#0000FF",
+      "descripcion": "Tentativa de Estafa Cuento del Tío",
+      "relleno": false,
+      "borde": true
+    },
+
+    "ESCLARECIDO": {
+      "simbolo": "★",
+      "color": "#00FF00",
+      "descripcion": "Hecho Esclarecido",
+      "relleno": true
+    },
+    "COMISARIA": {
+      "simbolo": "◉",
+      "color": "#0000FF",
+      "descripcion": "Comisaría Jurisdiccional",
+      "relleno": true
+    },
+    "TRAILERS Y GARITAS": {
+      "simbolo": "◎",
+      "color": "#0000FF",
+      "descripcion": "Trailers y Garitas",
+      "relleno": true
+    }
+  },
+
+  "aliases": {
+    "ROBO AGR. ASALTANTE": "ROBO AGRAVADO ASALTANTE",
+    "ROBO AGR ASALTANTE": "ROBO AGRAVADO ASALTANTE",
+    "R. AGR. ASALTANTE": "ROBO AGRAVADO ASALTANTE",
+    "ROBO AGRAV. ASALTANTE": "ROBO AGRAVADO ASALTANTE",
+
+    "ROBO AGR. ASALTANTE EN BANDA": "ROBO AGRAVADO ASALTANTE EN BANDA",
+    "ROBO AGR ASALT EN BANDA": "ROBO AGRAVADO ASALTANTE EN BANDA",
+    "R. AGR. ASALT. EN BANDA": "ROBO AGRAVADO ASALTANTE EN BANDA",
+
+    "ROBO AGR. DE MOTOVEHICULO": "ROBO AGRAVADO DE MOTOVEHICULO",
+    "ROBO AGR DE MOTO": "ROBO AGRAVADO DE MOTOVEHICULO",
+    "ROBO AGR. MOTOVEHICULO": "ROBO AGRAVADO DE MOTOVEHICULO",
+    "R. AGR. MOTOVEH.": "ROBO AGRAVADO DE MOTOVEHICULO",
+
+    "ROBO AGR. PIRAÑA DE MOTOVEHICULO": "ROBO AGRAVADO PIRAÑA DE MOTOVEHICULO",
+    "ROBO AGR PIRAÑA MOTO": "ROBO AGRAVADO PIRAÑA DE MOTOVEHICULO",
+    "R. AGR. PIRAÑA MOTO": "ROBO AGRAVADO PIRAÑA DE MOTOVEHICULO",
+
+    "ROBO AGR. DE AUTOMOTOR": "ROBO AGRAVADO DE AUTOMOTOR",
+    "ROBO AGR DE AUTO": "ROBO AGRAVADO DE AUTOMOTOR",
+    "ROBO AGR. AUTOMOTOR": "ROBO AGRAVADO DE AUTOMOTOR",
+    "R. AGR. AUTO": "ROBO AGRAVADO DE AUTOMOTOR",
+
+    "ROBO AGR. ENTRADERA": "ROBO AGRAVADO ENTRADERA",
+    "ROBO AGR ENTRADERA": "ROBO AGRAVADO ENTRADERA",
+    "R. AGR. ENTRADERA": "ROBO AGRAVADO ENTRADERA",
+
+    "ROBO AGR. ARIETE": "ROBO AGRAVADO ARIETE",
+    "ROBO AGR ARIETE": "ROBO AGRAVADO ARIETE",
+    "R. AGR. ARIETE": "ROBO AGRAVADO ARIETE",
+
+    "ROBO PIRAÑA MOTO": "ROBO PIRAÑA DE MOTOVEHICULOS",
+    "ROBO PIRAÑA DE MOTO": "ROBO PIRAÑA DE MOTOVEHICULOS",
+    "R. PIRAÑA MOTO": "ROBO PIRAÑA DE MOTOVEHICULOS",
+
+    "R. PIRAÑA": "ROBO PIRAÑA",
+    "R. ARREBATO": "ROBO ARREBATO",
+
+    "ROBO CLAVERO": "ROBO CLAVERO DE AUTOS",
+    "R. CLAVERO": "ROBO CLAVERO DE AUTOS",
+    "R. CLAVERO AUTOS": "ROBO CLAVERO DE AUTOS",
+
+    "ROBO DE MOTO": "ROBO DE MOTOVEHICULOS",
+    "ROBO MOTO": "ROBO DE MOTOVEHICULOS",
+    "R. DE MOTO": "ROBO DE MOTOVEHICULOS",
+
+    "ROBO DE AUTO": "ROBO DE AUTOMOTOR",
+    "ROBO AUTO": "ROBO DE AUTOMOTOR",
+    "R. DE AUTO": "ROBO DE AUTOMOTOR",
+
+    "R. ESCRUCHE": "ROBO ESCRUCHE",
+    "R. BOQUETERO": "ROBO BOQUETERO",
+
+    "ROBO R. VIDRIO": "ROBO ROMPE VIDRIO",
+    "R. ROMPE VIDRIO": "ROBO ROMPE VIDRIO",
+    "R.R.V.": "ROBO ROMPE VIDRIO",
+    "R. OPORTUNISTA": "ROBO OPORTUNISTA",
+
+    "H. PUNGA": "HURTO PUNGA",
+    "H. MECHERA": "HURTO MECHERA",
+    "H. OPORTUNISTA": "HURTO OPORTUNISTA",
+
+    "HURTO DE MOTO": "HURTO DE MOTOVEHICULO",
+    "HURTO MOTO": "HURTO DE MOTOVEHICULO",
+    "H. DE MOTO": "HURTO DE MOTOVEHICULO",
+
+    "HURTO DE AUTO": "HURTO DE AUTOMOTOR",
+    "HURTO AUTO": "HURTO DE AUTOMOTOR",
+    "H. DE AUTO": "HURTO DE AUTOMOTOR",
+
+    "HURTO INHIBIDOR": "HURTO INHIBIDOR DE ALARMAS",
+    "H. INHIBIDOR": "HURTO INHIBIDOR DE ALARMAS",
+    "H. INHIB. ALARMAS": "HURTO INHIBIDOR DE ALARMAS",
+
+    "H. ESCALAMIENTO": "HURTO ESCALAMIENTO",
+
+    "H. VIUDA NEGRA": "HURTO VIUDA NEGRA",
+    "HURTO V. NEGRA": "HURTO VIUDA NEGRA",
+
+    "ESTAFA CUENTO TIO": "ESTAFA CUENTO DEL TIO",
+    "E. CUENTO DEL TIO": "ESTAFA CUENTO DEL TIO",
+    "CUENTO DEL TIO": "ESTAFA CUENTO DEL TIO",
+
+    "TENT. ROBO AGR. ASALTANTE": "TENTATIVA DE ROBO AGRAVADO ASALTANTE",
+    "TENT. R. AGR. ASALTANTE": "TENTATIVA DE ROBO AGRAVADO ASALTANTE",
+    "T. ROBO AGR ASALT": "TENTATIVA DE ROBO AGRAVADO ASALTANTE",
+
+    "TENT. ROBO ESCRUCHE": "TENTATIVA DE ROBO ESCRUCHE",
+    "T. ROBO ESCRUCHE": "TENTATIVA DE ROBO ESCRUCHE",
+    "T. R. ESCRUCHE": "TENTATIVA DE ROBO ESCRUCHE",
+
+    "TENT. HURTO PUNGA": "TENTATIVA DE HURTO PUNGA",
+    "T. HURTO PUNGA": "TENTATIVA DE HURTO PUNGA",
+    "T. H. PUNGA": "TENTATIVA DE HURTO PUNGA",
+
+    "TENT. ESTAFA CUENTO TIO": "TENTATIVA DE ESTAFA CUENTO DEL TIO",
+    "T. ESTAFA CUENTO TIO": "TENTATIVA DE ESTAFA CUENTO DEL TIO",
+    "T. E. CUENTO DEL TIO": "TENTATIVA DE ESTAFA CUENTO DEL TIO"
+  },
+
+  "modus_operandi": [
+    "ASALTANTE",
+    "ASALTANTE EN BANDA",
+    "PIRAÑA",
+    "ARREBATO",
+    "ESCRUCHE",
+    "BOQUETERO",
+    "ROMPE VIDRIO",
+    "ENTRADERA",
+    "ARIETE",
+    "CLAVERO",
+    "INHIBIDOR DE ALARMAS",
+    "ESCALAMIENTO",
+    "VIUDA NEGRA",
+    "PUNGA",
+    "MECHERA",
+    "OPORTUNISTA",
+    "CUENTO DEL TIO"
+  ],
+
+  "ambitos": [
+    "VIA_PUBLICA",
+    "VIVIENDA",
+    "COMERCIO",
+    "TRANSPORTE_PUBLICO",
+    "ESTABLECIMIENTO_EDUCATIVO",
+    "OTRO"
+  ],
+
+  "vehiculos": ["A_PIE", "MOTOCICLETA", "AUTOMOVIL", "BICICLETA", "#NO_CONSTA"],
+
+  "armas": [
+    "ARMA_DE_FUEGO",
+    "ARMA_BLANCA",
+    "OBJETO_CONTUNDENTE",
+    "SIMULACRO_DE_ARMA",
+    "FUERZA_FISICA",
+    "#NO_CONSTA"
+  ],
+
+  "clasificacion_aprehendidos": [
+    "MAYOR_CON_ANTECEDENTES",
+    "MAYOR_PRIMERIZO",
+    "MENOR_CON_ANTECEDENTES",
+    "MENOR_PRIMERIZO"
+  ],
+
+  "resolucion_hechos": {
+    "06-DETENCION_CIVIL": "Detención Civil",
+    "05-IDENTIFICADO": "Identificado",
+    "04-MENCIONADO": "Mencionado",
+    "03-APREHENDIDO": "Aprehendido",
+    "02-APREHENDIDO": "Aprehendido",
+    "01-SIN_RESOLVER": "Sin Resolver"
+  },
+
+  "situacion_causante": {
+    "02-APREHENDIDO": "Aprehendido",
+    "03-IDENTIFICADO": "Identificado",
+    "04-MENCIONADO": "Mencionado",
+    "01-PROFUGO": "Prófugo"
+  },
+
+  "field_mappings": {
+    "hechos": {
+      "nro_sumario": {
+        "source_fields": [
+          "ID_N_SRIO",
+          "Nº DE IMAGEN-SUMARIO Nº",
+          "NRO_SUMAR",
+          "SUMARIO"
+        ],
+        "type": "string",
+        "required": false
+      },
+      "jurisdiccion": {
+        "source_fields": [
+          "JURIS_HECH",
+          "JURISDICCION DONDE TUVO LUGAR EL DELITO",
+          "JURISDICCION",
+          "JURISD"
+        ],
+        "type": "string",
+        "required": false
+      },
+      "dependencia": {
+        "source_fields": [
+          "DPCIA_INT",
+          "DEPENDENCIA INTERVINIENTE",
+          "DEPENDENCIA",
+          "COMISARIA"
+        ],
+        "type": "string",
+        "required": false
+      },
+      "fecha": {
+        "source_fields": [
+          "FECHA_HECH",
+          "FECHA DEL DELITO",
+          "FECHA",
+          "FEC_HECHO"
+        ],
+        "type": "date",
+        "required": true,
+        "format": "%d-%m-%Y"
+      },
+      "dia_semana": {
+        "source_fields": [
+          "DIA_HECHO",
+          "DIA EN QUE OCURRIO EL HECHO",
+          "DIA",
+          "DIA_SEMANA"
+        ],
+        "type": "string",
+        "required": false
+      },
+      "hora": {
+        "source_fields": ["HORA_HECH", "HORA DEL DELITO", "HORA", "HORA_HECHO"],
+        "type": "time",
+        "required": false,
+        "format": "%H:%M"
+      },
+      "franja_horaria": {
+        "source_fields": [
+          "FRAN_HORAR",
+          "FRANJA HORARIA EN QUE OCURRIO EL DELITO",
+          "FRANJA_HOR",
+          "FRANJA"
+        ],
+        "type": "string",
+        "required": false
+      },
+      "barrio": {
+        "source_fields": ["PRDA_URBAN", "PARADA_URBANA", "BARRIO"],
+        "type": "string",
+        "required": false
+      },
+      "direccion": {
+        "source_fields": [
+          "DIREC_HECH",
+          "DIRECCION DONDE OCURRIO EL DELITO",
+          "DIRECCION",
+          "DIR_HECHO",
+          "CALLE"
+        ],
+        "type": "string",
+        "required": false
+      },
+      "ambito": {
+        "source_fields": [
+          "LUGR_HECHO",
+          "LUGAR DONDE TUVO LUGAR EL DELITO",
+          "AMBITO",
+          "LUGAR",
+          "TIPO_LUGAR"
+        ],
+        "type": "string",
+        "required": false
+      },
+      "detalle_lugar": {
+        "source_fields": [
+          "DET_LUG_HE",
+          "DETALLE DEL LUGAR DONDE OCURRIO EL DELITO",
+          "DET_LUGAR"
+        ],
+        "type": "string",
+        "required": false
+      },
+      "delito": {
+        "source_fields": [
+          "DELITO",
+          "DELITO COMETIDO",
+          "TIPO_DELIT",
+          "MODALIDAD"
+        ],
+        "type": "string",
+        "required": true
+      },
+      "modus_operandi": {
+        "source_fields": ["MODUS_OPER", "MODUS OPERANDI", "MODUS", "MOD_OPER"],
+        "type": "string",
+        "required": false
+      },
+      "movilidad": {
+        "source_fields": [
+          "VEHIC_UTIL",
+          "VEHICULOS UTILIZADOS",
+          "MOVILIDAD",
+          "VEHICULO",
+          "MEDIO_MOV"
+        ],
+        "type": "string",
+        "required": false
+      },
+      "descripcion_vehiculo": {
+        "source_fields": [
+          "DET_VEHIC",
+          "DESCRIPCION DEL O LOS VEHICULOS UTILIZADOS"
+        ],
+        "type": "string",
+        "required": false
+      },
+      "arma_medio": {
+        "source_fields": [
+          "ARMA_UTILI",
+          "ARMA UTILIZADA",
+          "ARMA",
+          "TIPO_ARMA",
+          "MEDIO_ARMA"
+        ],
+        "type": "string",
+        "required": false
+      },
+      "detalle_arma": {
+        "source_fields": ["DET_ARMA", "DETALLE DEL ARMA UTILIZADA"],
+        "type": "string",
+        "required": false
+      },
+      "elemento_sustraido": {
+        "source_fields": ["ELEMN_SUST", "ELEMENTO SUSTRAIDO", "ELEM_SUST"],
+        "type": "string",
+        "required": false
+      },
+      "resena_hecho": {
+        "source_fields": ["RESEN_HECH", "RESENA_HECHO"],
+        "type": "string",
+        "required": false
+      },
+      "sexo_victima": {
+        "source_fields": ["SEXO_VICTI", "SEXO DE LA VICTIMA", "SEXO_VICT"],
+        "type": "string",
+        "required": false
+      },
+      "edad_victima": {
+        "source_fields": ["EDAD_VICTI", "EDAD DE LA VICTIMA", "EDAD_VICT"],
+        "type": "string",
+        "required": false
+      },
+      "nombre_victima": {
+        "source_fields": ["AP_NOM_VIC", "APELLIDO Y NOMBRE DE LA VICTIMA"],
+        "type": "string",
+        "required": false
+      },
+      "dni_victima": {
+        "source_fields": ["DNI_VICTIM", "DNI_VICTIMA"],
+        "type": "string",
+        "required": false
+      },
+      "direccion_victima": {
+        "source_fields": ["DIREC_VICT", "DIRECCION_VICTIMA"],
+        "type": "string",
+        "required": false
+      },
+      "nombre_causante": {
+        "source_fields": [
+          "AP_NOM_CAU",
+          "APELLIDO Y NOMBRE DEL CAUSANTE",
+          "CAUSANTE"
+        ],
+        "type": "string",
+        "required": false
+      },
+      "sexo_causante": {
+        "source_fields": ["SEXO_CAUS", "SEXO DEL CAUSANTE"],
+        "type": "string",
+        "required": false
+      },
+      "edad_causante": {
+        "source_fields": ["EDAD_CAUSA", "EDAD DEL CAUSANTE", "EDAD_CAUS"],
+        "type": "string",
+        "required": false
+      },
+      "dni_causante": {
+        "source_fields": ["DNI_CAUSAN", "DNI_CAUSANTE"],
+        "type": "string",
+        "required": false
+      },
+      "direccion_causante": {
+        "source_fields": ["DIREC_CAUS", "DIRECCION DEL CAUSANTE"],
+        "type": "string",
+        "required": false
+      },
+      "descripcion_causante": {
+        "source_fields": ["DESC_CAUS", "DESCRIPCION_CAUSANTE"],
+        "type": "string",
+        "required": false
+      },
+      "esclarecido": {
+        "source_fields": [
+          "HECH_RESUE",
+          "EL HECHO FUE RESUELTO",
+          "ESCLAREC",
+          "RESUELTO",
+          "ESTADO"
+        ],
+        "type": "string",
+        "required": false
+      },
+      "resolucion_hecho": {
+        "source_fields": ["RESOL_HECH", "RESOLUCION_HECHO"],
+        "type": "string",
+        "required": false
+      },
+      "situacion_causante": {
+        "source_fields": ["SITUA_CAUS", "SITUACION DEL CAUSANTE", "SIT_CAUS"],
+        "type": "string",
+        "required": false
+      },
+      "mes": {
+        "source_fields": ["MES_DENU", "MES EN QUE OCURRIO EL DELITO", "MES"],
+        "type": "string",
+        "required": false
+      },
+      "coordenada_x": {
+        "source_fields": ["X"],
+        "type": "float",
+        "required": false
+      },
+      "coordenada_y": {
+        "source_fields": ["Y"],
+        "type": "float",
+        "required": false
+      }
+    },
+    "mencionados": {
+      "alias": {
+        "source_fields": ["ALIAS", "alias", "APODO", "TAL", "CONOCIDO"],
+        "type": "string",
+        "required": false
+      },
+      "nombre": {
+        "source_fields": [
+          "AP_NOM_CAU",
+          "APELLIDO Y NOMBRE DEL CAUSANTE",
+          "NOMBRE",
+          "CAUSANTE"
+        ],
+        "type": "string",
+        "required": false
+      },
+      "delito": {
+        "source_fields": ["DELITO", "DELITO COMETIDO", "TIPO_DELIT"],
+        "type": "string",
+        "required": true
+      },
+      "fecha": {
+        "source_fields": ["FECHA_HECH", "FECHA DEL DELITO", "FECHA"],
+        "type": "date",
+        "required": false,
+        "format": "%d-%m-%Y"
+      },
+      "hora": {
+        "source_fields": ["HORA_HECH", "HORA DEL DELITO", "HORA"],
+        "type": "time",
+        "required": false,
+        "format": "%H:%M"
+      },
+      "direccion": {
+        "source_fields": [
+          "DIREC_HECH",
+          "DIRECCION DONDE OCURRIO EL DELITO",
+          "DIRECCION"
+        ],
+        "type": "string",
+        "required": false
+      },
+      "descripcion": {
+        "source_fields": [
+          "DESC_CAUS",
+          "DESCRIPCION",
+          "FILIACION",
+          "DATOS_FILIATORIOS"
+        ],
+        "type": "string",
+        "required": false
+      },
+      "nro_sumario": {
+        "source_fields": ["ID_N_SRIO", "NRO_SUMAR", "SUMARIO"],
+        "type": "string",
+        "required": false
+      }
+    },
+    "aprehendidos": {
+      "nombre": {
+        "source_fields": [
+          "AP_NOM_CAU",
+          "APELLIDO Y NOMBRE DEL CAUSANTE",
+          "CAUSANTE",
+          "NOMBRE"
+        ],
+        "type": "string",
+        "required": false
+      },
+      "edad": {
+        "source_fields": ["EDAD_CAUSA", "EDAD DEL CAUSANTE", "EDAD"],
+        "type": "string",
+        "required": false
+      },
+      "sexo": {
+        "source_fields": ["SEXO_CAUS", "SEXO DEL CAUSANTE", "SEXO"],
+        "type": "string",
+        "required": false
+      },
+      "delito": {
+        "source_fields": ["DELITO", "DELITO COMETIDO", "CAUSA"],
+        "type": "string",
+        "required": true
+      },
+      "fecha_aprehension": {
+        "source_fields": [
+          "FECHA_HECH",
+          "FECHA DEL DELITO",
+          "FECHA",
+          "FEC_APREH"
+        ],
+        "type": "date",
+        "required": false,
+        "format": "%d-%m-%Y"
+      },
+      "situacion": {
+        "source_fields": ["SITUA_CAUS", "SITUACION DEL CAUSANTE", "SITUACION"],
+        "type": "string",
+        "required": false
+      },
+      "direccion": {
+        "source_fields": [
+          "DIREC_CAUS",
+          "DIRECCION DEL CAUSANTE",
+          "DIRECCION",
+          "DOMICILIO"
+        ],
+        "type": "string",
+        "required": false
+      },
+      "descripcion": {
+        "source_fields": ["DESC_CAUS", "DESCRIPCION_CAUSANTE"],
+        "type": "string",
+        "required": false
+      },
+      "nro_sumario": {
+        "source_fields": ["ID_N_SRIO", "NRO_SUMAR", "SUMARIO"],
+        "type": "string",
+        "required": false
+      }
+    }
+  },
+
+  "colores_delitos_graficos": {
+    "ROBO AGRAVADO ASALTANTE": "#FF0000",
+    "ROBO AGRAVADO ASALTANTE EN BANDA": "#CC0000",
+    "ROBO AGRAVADO DE MOTOVEHICULO": "#FF3333",
+    "ROBO AGRAVADO PIRAÑA DE MOTOVEHICULO": "#FF6666",
+    "ROBO AGRAVADO DE AUTOMOTOR": "#990000",
+    "ROBO AGRAVADO ENTRADERA": "#FF4444",
+    "ROBO AGRAVADO ARIETE": "#CC3333",
+    "ROBO PIRAÑA DE MOTOVEHICULOS": "#00FF00",
+    "ROBO PIRAÑA": "#33CC33",
+    "ROBO ARREBATO": "#FFFF00",
+    "ROBO CLAVERO DE AUTOS": "#66CC66",
+    "ROBO DE MOTOVEHICULOS": "#009900",
+    "ROBO DE AUTOMOTOR": "#006600",
+    "ROBO ESCRUCHE": "#00CC00",
+    "ROBO BOQUETERO": "#339933",
+    "ROBO ROMPE VIDRIO": "#333333",
+    "ROBO OPORTUNISTA": "#000000",
+    "HURTO PUNGA": "#0000FF",
+    "HURTO MECHERA": "#CCCC00",
+    "HURTO OPORTUNISTA": "#333333",
+    "HURTO DE MOTOVEHICULO": "#CC0000",
+    "HURTO DE AUTOMOTOR": "#666666",
+    "HURTO INHIBIDOR DE ALARMAS": "#444444",
+    "HURTO ESCALAMIENTO": "#FF8800",
+    "HURTO VIUDA NEGRA": "#111111",
+    "ESTAFA CUENTO DEL TIO": "#0066FF",
+    "TENTATIVA DE ESTAFA CUENTO DEL TIO": "#3399FF"
+  },
+
+  "colores_excel": {
+    "encabezado": { "fondo": "FF0000", "texto": "FFFFFF" },
+    "total": { "fondo": "FFFF00", "texto": "000000" },
+    "subtotal": { "fondo": "0000FF", "texto": "FFFFFF" },
+    "alternado_1": "FFFFFF",
+    "alternado_2": "F0F0F0"
+  },
+
+  "chart_config": {
+    "figure_size": [10, 6],
+    "dpi": 150,
+    "bar_color": "#4169E1",
+    "bar_edge_color": "#000000",
+    "font_family": "Segoe UI",
+    "title_font_size": 14,
+    "label_font_size": 10,
+    "tick_font_size": 9,
+    "grid_alpha": 0.3,
+    "background_color": "#FFFFFF"
+  },
+
+  "tema_policial": {
+    "fondos": {
+      "principal": "#0a0a12",
+      "secundario": "#0f0f1a",
+      "panel": "#1a1a2e",
+      "card": "#16213e"
+    },
+    "acentos": {
+      "cyan_neon": "#00d4ff",
+      "cyan_oscuro": "#0099cc",
+      "rojo_alerta": "#ff3b3b",
+      "rojo_oscuro": "#cc0000",
+      "verde_exito": "#00ff88",
+      "verde_oscuro": "#00cc66",
+      "amarillo_warning": "#ffaa00",
+      "naranja": "#ff6600"
+    },
+    "texto": {
+      "principal": "#e0e0e0",
+      "secundario": "#a0a0a0",
+      "titulo": "#ffffff"
+    },
+    "bordes": {
+      "activo": "#00d4ff",
+      "inactivo": "#2a2a4a"
+    }
+  }
+}

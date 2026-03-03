@@ -1,30 +1,26 @@
-# S.I.D.I.C - Sistema de Información Delictual e Inteligencia Criminal
-# Dependencias del proyecto
+# S.I.D.I.C v2.0 — Sistema de Información Delictual e Inteligencia Criminal
+# Dependencias de producción
 
-# Core - Procesamiento de datos geoespaciales
-geopandas>=0.14.0
-pandas>=2.0.0
-numpy>=1.24.0
-pyshp>=2.3.0
-shapely>=2.0.0
-
-# Visualización - Gráficos
-matplotlib>=3.7.0
-seaborn>=0.12.0
-
-# GUI - Interfaz gráfica
+# GUI
 PyQt6>=6.5.0
 
-# Exportación - Excel
+# Datos geoespaciales
+pandas>=2.0.0
+geopandas>=0.14.0
+shapely>=2.0.0
+fiona>=1.9.0
+
+# Gráficos
+matplotlib>=3.7.0
+
+# Exportación Excel
 openpyxl>=3.1.0
-XlsxWriter>=3.1.0
 
-# Exportación - Word/PDF
-python-docx>=0.8.11
-docx2pdf>=0.1.8
+# Exportación Word
+python-docx>=1.0.0
 
-# Utilidades
-Pillow>=10.0.0
+# Exportación PDF nativa
+reportlab>=4.0.0
 
-# Empaquetado (solo desarrollo)
-pyinstaller>=5.13.0
+# Detección de encoding
+chardet>=5.0.0

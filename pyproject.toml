@@ -1,84 +1,109 @@
 [build-system]
-requires = ["setuptools>=61.0", "wheel"]
+requires = ["setuptools>=68.0", "wheel"]
 build-backend = "setuptools.build_meta"
+
+# ──────────────────────────── Proyecto ────────────────────────────────
 
 [project]
 name = "sidic"
-version = "1.0.0"
-description = "Sistema de Información Delictual e Inteligencia Criminal"
+version = "2.0.0"
+description = "S.I.D.I.C — Sistema de Información Delictual e Inteligencia Criminal"
 readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.11"
-authors = [
-    {name = "S.I.D.I.C Team"}
-]
+authors = [{name = "S.I.D.I.C Team"}]
 keywords = ["crime", "analysis", "gis", "shapefile", "reports", "statistics"]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Environment :: Win32 (MS Windows)",
-    "Intended Audience :: Developers",
     "Intended Audience :: Law Enforcement",
     "License :: OSI Approved :: MIT License",
     "Operating System :: Microsoft :: Windows",
-    "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Topic :: Scientific/Engineering :: GIS",
-    "Topic :: Office/Business :: Office Suites",
 ]
 
 dependencies = [
-    "PyQt6>=6.4.0",
+    # GUI
+    "PyQt6>=6.5.0",
+    # Data
     "pandas>=2.0.0",
     "geopandas>=0.14.0",
-    "pyshp>=2.3.0",
     "shapely>=2.0.0",
+    "fiona>=1.9.0",
+    # Gráficos
     "matplotlib>=3.7.0",
-    "seaborn>=0.12.0",
+    # Excel
     "openpyxl>=3.1.0",
-    "xlsxwriter>=3.1.0",
+    # Word
     "python-docx>=1.0.0",
-    "docx2pdf>=0.1.8",
+    # PDF nativo
+    "reportlab>=4.0.0",
+    # Detección de encoding
+    "chardet>=5.0.0",
 ]
 
 [project.optional-dependencies]
+pdf-fallback = [
+    "docx2pdf>=0.1.8",
+]
 dev = [
-    "pytest>=7.0.0",
+    "pytest>=7.4.0",
     "pytest-qt>=4.2.0",
-    "black>=23.0.0",
-    "isort>=5.12.0",
-    "mypy>=1.0.0",
-    "flake8>=6.0.0",
+    "pytest-cov>=4.1.0",
+    "ruff>=0.3.0",
+    "mypy>=1.8.0",
+    "types-chardet",
+    "pandas-stubs",
 ]
 build = [
-    "pyinstaller>=5.13.0",
+    "pyinstaller>=6.0.0",
 ]
 
+# ──────────────────────────── URLs ────────────────────────────────────
+
 [project.urls]
-Homepage = "https://github.com/tu-usuario/sidic"
-Documentation = "https://github.com/tu-usuario/sidic#readme"
-Repository = "https://github.com/tu-usuario/sidic.git"
-Issues = "https://github.com/tu-usuario/sidic/issues"
+Homepage   = "https://github.com/developerpoliciatuc-wq/S.I.D.I.C"
+Repository = "https://github.com/developerpoliciatuc-wq/S.I.D.I.C.git"
+Issues     = "https://github.com/developerpoliciatuc-wq/S.I.D.I.C/issues"
+
+# ──────────────────────── Entry points ────────────────────────────────
 
 [project.scripts]
-sidic = "src.main:main"
-sidic-cli = "src.main:main_cli"
+sidic-cli = "sidic.app:main_cli"
 
 [project.gui-scripts]
-sidic-gui = "src.main:main"
+sidic = "sidic.app:main_gui"
+
+# ──────────────────────── Packaging ───────────────────────────────────
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["src*", "config*"]
+include = ["sidic*"]
 
-[tool.black]
+[tool.setuptools.package-data]
+sidic = [
+    "config/*.json",
+    "presentation/styles/*.qss",
+    "resources/*",
+]
+
+# ──────────────────────────── Ruff ────────────────────────────────────
+
+[tool.ruff]
+target-version = "py311"
 line-length = 100
-target-version = ['py311']
-include = '\.pyi?$'
+src = ["sidic"]
 
-[tool.isort]
-profile = "black"
-line_length = 100
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "UP", "B", "SIM", "C4"]
+ignore = ["E501"]
+
+[tool.ruff.format]
+quote-style = "double"
+
+# ──────────────────────────── Mypy ────────────────────────────────────
 
 [tool.mypy]
 python_version = "3.11"
@@ -86,6 +111,9 @@ warn_return_any = true
 warn_unused_configs = true
 ignore_missing_imports = true
 
+# ──────────────────────────── Pytest ──────────────────────────────────
+
 [tool.pytest.ini_options]
-testpaths = ["tests"]
+testpaths = ["sidic/tests"]
 python_files = ["test_*.py"]
+addopts = "-v --tb=short -p no:cacheprovider"
